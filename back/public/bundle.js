@@ -17516,6 +17516,51 @@ ___CSS_LOADER_EXPORT___.push([module.i, "/*!\n * Bootstrap v4.5.2 (https://getbo
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/card/Card.scss":
+/*!********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/card/Card.scss ***!
+  \********************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+___CSS_LOADER_EXPORT___.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Bangers&display=swap);"]);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".imgSuperhero {\n  width: 100%;\n  border-radius: 10px;\n  height: 300px;\n}\n\n.cardSuperhero {\n  width: 100%;\n  border-radius: 10px;\n  height: 300px;\n  background-color: #005E7C;\n  text-align: center;\n}\n\n.divSuperhero {\n  margin-bottom: 30px;\n}\n\n.cardSuperhero h3 {\n  font-family: \"Bangers\", cursive;\n  color: white;\n}", "",{"version":3,"sources":["/home/bauti/Escritorio/SuperHero/front/src/components/card/Card.scss","Card.scss"],"names":[],"mappings":"AAEA;EACI,WAAA;EACA,mBAAA;EACA,aAAA;ACAJ;;ADGA;EACI,WAAA;EACA,mBAAA;EACA,aAAA;EACA,yBAAA;EACA,kBAAA;ACAJ;;ADGA;EACI,mBAAA;ACAJ;;ADGA;EACI,+BAAA;EACA,YAAA;ACAJ","file":"Card.scss","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');\n\n.imgSuperhero{\n    width: 100%;\n    border-radius: 10px;\n    height: 300px;\n}\n\n.cardSuperhero{\n    width: 100%;\n    border-radius: 10px;\n    height: 300px;\n    background-color: #005E7C;\n    text-align: center;\n}\n\n.divSuperhero{\n    margin-bottom: 30px;\n}\n\n.cardSuperhero h3{\n    font-family: 'Bangers', cursive;\n    color: white;\n}","@import url(\"https://fonts.googleapis.com/css2?family=Bangers&display=swap\");\n.imgSuperhero {\n  width: 100%;\n  border-radius: 10px;\n  height: 300px;\n}\n\n.cardSuperhero {\n  width: 100%;\n  border-radius: 10px;\n  height: 300px;\n  background-color: #005E7C;\n  text-align: center;\n}\n\n.divSuperhero {\n  margin-bottom: 30px;\n}\n\n.cardSuperhero h3 {\n  font-family: \"Bangers\", cursive;\n  color: white;\n}"]}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/main/Main.scss":
+/*!********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/main/Main.scss ***!
+  \********************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, "html {\n  height: 100%;\n}\n\nbody {\n  min-height: 100%;\n  background-image: url(\"https://img.wallpapersafari.com/desktop/1280/1024/90/80/Aq5Sd8.jpg\");\n}\n\n#main {\n  margin-bottom: 30px;\n}", "",{"version":3,"sources":["/home/bauti/Escritorio/SuperHero/front/src/components/main/Main.scss","Main.scss"],"names":[],"mappings":"AACA;EACI,YAAA;ACAJ;;ADGA;EACI,gBAAA;EACA,2FAAA;ACAJ;;ADGA;EACI,mBAAA;ACAJ","file":"Main.scss","sourcesContent":["\nhtml{\n    height: 100%;\n}\n\nbody{\n    min-height: 100%;\n    background-image: url(\"https://img.wallpapersafari.com/desktop/1280/1024/90/80/Aq5Sd8.jpg\");\n}\n\n#main{\n    margin-bottom: 30px;\n}","html {\n  height: 100%;\n}\n\nbody {\n  min-height: 100%;\n  background-image: url(\"https://img.wallpapersafari.com/desktop/1280/1024/90/80/Aq5Sd8.jpg\");\n}\n\n#main {\n  margin-bottom: 30px;\n}"]}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/navbar/Navbar.scss":
 /*!************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/navbar/Navbar.scss ***!
@@ -17532,7 +17577,29 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 ___CSS_LOADER_EXPORT___.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Bangers&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".MuiTypography-noWrap {\n  overflow: visible !important;\n}\n\n#navbar {\n  background-color: #29467A;\n}", "",{"version":3,"sources":["/home/bauti/Escritorio/SuperHero/front/src/components/navbar/Navbar.scss","Navbar.scss"],"names":[],"mappings":"AAEA;EACI,4BAAA;ACAJ;;ADGA;EACI,yBAAA;ACAJ","file":"Navbar.scss","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');\n\n.MuiTypography-noWrap{\n    overflow: visible !important;\n}\n\n#navbar{\n    background-color: #29467A;\n}","@import url(\"https://fonts.googleapis.com/css2?family=Bangers&display=swap\");\n.MuiTypography-noWrap {\n  overflow: visible !important;\n}\n\n#navbar {\n  background-color: #29467A;\n}"]}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".MuiTypography-noWrap {\n  overflow: visible !important;\n}\n\n#navbar {\n  background-color: #121212;\n}", "",{"version":3,"sources":["/home/bauti/Escritorio/SuperHero/front/src/components/navbar/Navbar.scss","Navbar.scss"],"names":[],"mappings":"AAEA;EACI,4BAAA;ACAJ;;ADGA;EACI,yBAAA;ACAJ","file":"Navbar.scss","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');\n\n.MuiTypography-noWrap{\n    overflow: visible !important;\n}\n\n#navbar{\n    background-color: #121212;\n}","@import url(\"https://fonts.googleapis.com/css2?family=Bangers&display=swap\");\n.MuiTypography-noWrap {\n  overflow: visible !important;\n}\n\n#navbar {\n  background-color: #121212;\n}"]}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/superheros/Superheros.scss":
+/*!********************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/superheros/Superheros.scss ***!
+  \********************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, "#superheros {\n  padding-top: 30px;\n  background-color: rgba(1, 64, 85, 0.4);\n  margin-top: 30px;\n  border-radius: 10px;\n}\n\n#results {\n  color: white;\n}", "",{"version":3,"sources":["/home/bauti/Escritorio/SuperHero/front/src/components/superheros/Superheros.scss","Superheros.scss"],"names":[],"mappings":"AACA;EACI,iBAAA;EACA,sCAAA;EACA,gBAAA;EACA,mBAAA;ACAJ;;ADGA;EACI,YAAA;ACAJ","file":"Superheros.scss","sourcesContent":["\n#superheros{\n    padding-top: 30px;\n    background-color: rgba(1, 64, 85, 0.4);\n    margin-top: 30px;\n    border-radius: 10px;\n}\n\n#results{\n    color: white;\n}","#superheros {\n  padding-top: 30px;\n  background-color: rgba(1, 64, 85, 0.4);\n  margin-top: 30px;\n  border-radius: 10px;\n}\n\n#results {\n  color: white;\n}"]}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -24196,6 +24263,104 @@ if (true) {
 var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
+
+
+/***/ }),
+
+/***/ "./node_modules/react-card-flip/lib/ReactCardFlip.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/react-card-flip/lib/ReactCardFlip.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var ReactCardFlip = function (props) {
+    var _a = props.cardStyles, back = _a.back, front = _a.front, cardZIndex = props.cardZIndex, containerStyle = props.containerStyle, flipDirection = props.flipDirection, flipSpeedFrontToBack = props.flipSpeedFrontToBack, flipSpeedBackToFront = props.flipSpeedBackToFront, infinite = props.infinite;
+    var _b = react_1.useState(props.isFlipped), isFlipped = _b[0], setFlipped = _b[1];
+    var _c = react_1.useState(0), rotation = _c[0], setRotation = _c[1];
+    react_1.useEffect(function () {
+        if (props.isFlipped !== isFlipped) {
+            setFlipped(props.isFlipped);
+            setRotation(function (c) { return c + 180; });
+        }
+    }, [props.isFlipped]);
+    var getComponent = function (key) {
+        if (props.children.length !== 2) {
+            throw new Error('Component ReactCardFlip requires 2 children to function');
+        }
+        return props.children[key];
+    };
+    var frontRotateY = "rotateY(" + (infinite ? rotation : isFlipped ? 180 : 0) + "deg)";
+    var backRotateY = "rotateY(" + (infinite ? rotation + 180 : isFlipped ? 0 : -180) + "deg)";
+    var frontRotateX = "rotateX(" + (infinite ? rotation : isFlipped ? 180 : 0) + "deg)";
+    var backRotateX = "rotateX(" + (infinite ? rotation + 180 : isFlipped ? 0 : -180) + "deg)";
+    var styles = {
+        back: __assign({ WebkitBackfaceVisibility: 'hidden', backfaceVisibility: 'hidden', height: '100%', left: '0', position: isFlipped ? 'relative' : 'absolute', top: '0', transform: flipDirection === 'horizontal' ? backRotateY : backRotateX, transformStyle: 'preserve-3d', transition: flipSpeedFrontToBack + "s", width: '100%' }, back),
+        container: {
+            perspective: '1000px',
+            zIndex: "" + cardZIndex,
+        },
+        flipper: {
+            height: '100%',
+            position: 'relative',
+            width: '100%',
+        },
+        front: __assign({ WebkitBackfaceVisibility: 'hidden', backfaceVisibility: 'hidden', height: '100%', left: '0', position: isFlipped ? 'absolute' : 'relative', top: '0', transform: flipDirection === 'horizontal' ? frontRotateY : frontRotateX, transformStyle: 'preserve-3d', transition: flipSpeedBackToFront + "s", width: '100%', zIndex: '2' }, front),
+    };
+    return (React.createElement("div", { className: "react-card-flip", style: __assign(__assign({}, styles.container), containerStyle) },
+        React.createElement("div", { className: "react-card-flipper", style: styles.flipper },
+            React.createElement("div", { className: "react-card-front", style: styles.front }, getComponent(0)),
+            React.createElement("div", { className: "react-card-back", style: styles.back }, getComponent(1)))));
+};
+ReactCardFlip.defaultProps = {
+    cardStyles: {
+        back: {},
+        front: {},
+    },
+    cardZIndex: 'auto',
+    containerStyle: {},
+    flipDirection: 'horizontal',
+    flipSpeedBackToFront: 0.6,
+    flipSpeedFrontToBack: 0.6,
+    infinite: false,
+    isFlipped: false,
+};
+exports.default = ReactCardFlip;
 
 
 /***/ }),
@@ -58842,6 +59007,98 @@ module.exports = function(originalModule) {
 
 /***/ }),
 
+/***/ "./src/components/card/Card.js":
+/*!*************************************!*\
+  !*** ./src/components/card/Card.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_card_flip__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-card-flip */ "./node_modules/react-card-flip/lib/ReactCardFlip.js");
+/* harmony import */ var react_card_flip__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_card_flip__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Card_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Card.scss */ "./src/components/card/Card.scss");
+/* harmony import */ var _Card_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Card_scss__WEBPACK_IMPORTED_MODULE_2__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
+  var superhero = _ref.superhero;
+
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false),
+      _React$useState2 = _slicedToArray(_React$useState, 2),
+      isFlipped = _React$useState2[0],
+      setIsFlipped = _React$useState2[1];
+
+  var handleClick = function handleClick() {
+    setIsFlipped(!isFlipped);
+  };
+
+  react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(function () {
+    setIsFlipped(false);
+  }, [superhero.name]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 divSuperhero"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_card_flip__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    isFlipped: isFlipped,
+    flipDirection: "horizontal"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "imgSuperhero",
+    src: superhero.image.url,
+    alt: superhero.name,
+    onClick: handleClick
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cardSuperhero",
+    onClick: handleClick
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, superhero.name))));
+});
+
+/***/ }),
+
+/***/ "./src/components/card/Card.scss":
+/*!***************************************!*\
+  !*** ./src/components/card/Card.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./Card.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/card/Card.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
 /***/ "./src/components/main/Main.js":
 /*!*************************************!*\
   !*** ./src/components/main/Main.js ***!
@@ -58854,13 +59111,47 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _navbar_NavbarContainer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../navbar/NavbarContainer */ "./src/components/navbar/NavbarContainer.js");
+/* harmony import */ var _superheros_Superheros__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../superheros/Superheros */ "./src/components/superheros/Superheros.js");
+/* harmony import */ var _Main_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Main.scss */ "./src/components/main/Main.scss");
+/* harmony import */ var _Main_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Main_scss__WEBPACK_IMPORTED_MODULE_3__);
+
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     id: "main"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_navbar_NavbarContainer__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_navbar_NavbarContainer__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_superheros_Superheros__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 });
+
+/***/ }),
+
+/***/ "./src/components/main/Main.scss":
+/*!***************************************!*\
+  !*** ./src/components/main/Main.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./Main.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/main/Main.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
 
 /***/ }),
 
@@ -59120,7 +59411,7 @@ function Navbar(_ref) {
     onClick: toggleDrawer(true)
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_9___default.a, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: classes.title,
-    variant: "h6",
+    variant: "h5",
     noWrap: true
   }, "SuperHero App"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.search
@@ -59266,6 +59557,81 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 /***/ }),
 
+/***/ "./src/components/superheros/Superheros.js":
+/*!*************************************************!*\
+  !*** ./src/components/superheros/Superheros.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _card_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../card/Card */ "./src/components/card/Card.js");
+/* harmony import */ var _Superheros_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Superheros.scss */ "./src/components/superheros/Superheros.scss");
+/* harmony import */ var _Superheros_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Superheros_scss__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  var superheros = Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["useSelector"])(function (store) {
+    return store.superhero.superheros;
+  });
+  var search = Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["useSelector"])(function (store) {
+    return store.superhero.search;
+  });
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "superheros",
+    className: "container"
+  }, superheros.length ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    id: "results"
+  }, "Results for \"", search, "\"") : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, superheros.length ? superheros.map(function (superhero) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_card_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      superhero: superhero,
+      key: superhero.id
+    });
+  }) : "Search your Superheros!"));
+  {
+    superhero.name;
+  }
+});
+
+/***/ }),
+
+/***/ "./src/components/superheros/Superheros.scss":
+/*!***************************************************!*\
+  !*** ./src/components/superheros/Superheros.scss ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./Superheros.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/superheros/Superheros.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -59396,7 +59762,7 @@ function reducer() {
   switch (action.type) {
     case _constants__WEBPACK_IMPORTED_MODULE_0__["SET_SUPERHEROS"]:
       return _objectSpread(_objectSpread({}, state), {}, {
-        superheros: action.superheros.results,
+        superheros: action.superheros.results.slice(0, 15),
         search: action.superheros["results-for"]
       });
 

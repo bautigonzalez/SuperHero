@@ -183,7 +183,7 @@ export default function Navbar({handleChange, handleSubmit, searchValue}) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography className={classes.title} variant="h6" noWrap>
+          <Typography className={classes.title} variant="h5" noWrap>
             SuperHero App
           </Typography>
           <div className={classes.search}>
