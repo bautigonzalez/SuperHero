@@ -93,8 +93,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Navbar() {
+export default function Navbar({handleChange, handleSubmit, searchValue}) {
   const classes = useStyles();
+  const [state, setState] = React.useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
   const isMenuOpen = Boolean(anchorEl);
@@ -117,15 +118,16 @@ export default function Navbar() {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
-  const [state, setState] = React.useState(false);
-
-  const toggleDrawer = (open) => (event) => {
+  const toggleDrawer = open => event => {
     if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
     }
     setState(open);
   };
 
+  const keyPress = e => {
+    if (e.keyCode == 13) handleSubmit();
+  }
 
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
@@ -195,6 +197,9 @@ export default function Navbar() {
                 input: classes.inputInput,
               }}
               inputProps={{ 'aria-label': 'search' }}
+              onChange={handleChange}
+              onKeyDown={keyPress}
+              value={searchValue}
             />
           </div>
           <div className={classes.grow} />
