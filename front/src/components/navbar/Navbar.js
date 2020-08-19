@@ -20,6 +20,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import HomeIcon from '@material-ui/icons/Home';
 import MailIcon from '@material-ui/icons/Mail';
+import { Link } from 'react-router-dom';
 import "./Navbar.scss"
 
 const useStyles = makeStyles((theme) => ({
@@ -242,12 +243,14 @@ export default function Navbar({handleChange, handleSubmit, searchValue}) {
               onKeyDown={toggleDrawer(false)}
             >
                 <List>
+                    <Link to="/home">
                     <ListItem button >
                         <ListItemIcon>
                             <HomeIcon />
                         </ListItemIcon>
                         <ListItemText primary={"Home"} />
                     </ListItem>
+                    </Link>
                 </List>
               <Divider />
                 <List>

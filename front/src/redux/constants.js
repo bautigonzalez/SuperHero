@@ -1,1 +1,2 @@
 export const SET_SUPERHEROS = "SET_SUPERHEROS"
+export const SET_SUPERHERO = "SET_SUPERHERO"
