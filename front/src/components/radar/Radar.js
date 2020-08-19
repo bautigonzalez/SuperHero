@@ -16,7 +16,7 @@ export default ({characterData, handleClick})=>{
         <div className="Radar" onClick={handleClick}>
             <Radar options={{
             legend:{display:false}, 
-            scale:{ticks:{display:false}}}} 
+            scale:{pointLabels:{fontColor:"white"},ticks:{display:false}}}} 
             data={data}/>
         </div>
     );

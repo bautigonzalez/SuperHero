@@ -1,2 +1,5 @@
 export const SET_SUPERHEROS = "SET_SUPERHEROS"
 export const SET_SUPERHERO = "SET_SUPERHERO"
+export const LOGGED = "LOGGED"
+export const LOGOUT = "LOGOUT"
+export const VIEW_USERS = "VIEW_USERS"

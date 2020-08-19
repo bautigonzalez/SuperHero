@@ -20,7 +20,9 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import HomeIcon from '@material-ui/icons/Home';
 import MailIcon from '@material-ui/icons/Mail';
+import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from "react-redux";
 import "./Navbar.scss"
 
 const useStyles = makeStyles((theme) => ({
@@ -101,6 +103,7 @@ export default function Navbar({handleChange, handleSubmit, searchValue}) {
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+  const user = useSelector(store => store.user.user)
 
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -185,7 +188,7 @@ export default function Navbar({handleChange, handleSubmit, searchValue}) {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h5" noWrap>
-            SuperHero App
+            <Link to="/home" id="linkTitle">SuperHero App</Link>
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
@@ -205,6 +208,9 @@ export default function Navbar({handleChange, handleSubmit, searchValue}) {
           </div>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
+
+            {!user._id ? (<Link id="btnLogin" to="/login"><Button color="inherit">Login</Button></Link>
+            ):(
             <IconButton
               edge="end"
               aria-label="account of current user"
@@ -214,7 +220,7 @@ export default function Navbar({handleChange, handleSubmit, searchValue}) {
               color="inherit"
             >
               <AccountCircle />
-            </IconButton>
+            </IconButton>)}
           </div>
           <div className={classes.sectionMobile}>
             <IconButton

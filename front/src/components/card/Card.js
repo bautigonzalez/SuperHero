@@ -37,7 +37,7 @@ export default ({superhero}) => {
                         <h3  onClick={handleClick}>{superhero.name} </h3>
                         <Radar characterData={superhero.powerstats} handleClick={handleClick}/>
                         <Link to={`/character/${superhero.id}`}><Button variant="contained">Info</Button></Link>
-                        <div style={{width:"100%", height:"100%"}} onClick={handleClick}></div>
+                        <div style={{width:"100%", minHeight:"40%"}} onClick={handleClick}></div>
                     </div>
                 </ReactCardFlip>
             </div>
