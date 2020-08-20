@@ -23,6 +23,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
+import {sendLogout} from "../../redux/action-creators/user"
 import "./Navbar.scss"
 
 const useStyles = makeStyles((theme) => ({
@@ -98,6 +99,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Navbar({handleChange, handleSubmit, searchValue}) {
   const classes = useStyles();
+  const dispatch = useDispatch()
   const [state, setState] = React.useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -146,6 +148,10 @@ export default function Navbar({handleChange, handleSubmit, searchValue}) {
     >
       <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
       <MenuItem onClick={handleMenuClose}>My favorites</MenuItem>
+      <MenuItem onClick={()=>{
+        handleMenuClose()
+        dispatch(sendLogout())
+        }}>Logout</MenuItem>
     </Menu>
   );
 
@@ -249,7 +255,7 @@ export default function Navbar({handleChange, handleSubmit, searchValue}) {
               onKeyDown={toggleDrawer(false)}
             >
                 <List>
-                    <Link to="/home">
+                    <Link to="/home" className="linkNavbar">
                     <ListItem button >
                         <ListItemIcon>
                             <HomeIcon />

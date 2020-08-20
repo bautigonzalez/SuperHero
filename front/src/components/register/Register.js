@@ -24,7 +24,7 @@ export default () => {
             <div className="row">
               <div id="divRegister" className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                 <h2>Create your account!</h2>
-                <form noValidate autoComplete="off" onSubmit={handleSubmit}>
+                <form autoComplete="off" onSubmit={handleSubmit}>
                     <TextField 
                     value={username} 
                     type="email" 
@@ -32,6 +32,7 @@ export default () => {
                     label="Email" 
                     variant="filled"
                     onChange={handleUsername}
+                    required
                     />
                     <TextField 
                     value={password} 
@@ -40,6 +41,7 @@ export default () => {
                     label="Password" 
                     variant="filled" 
                     onChange={handlePassword}
+                    required
                     />
                     <Button variant="contained" type="submit">Register</Button>
                 </form>

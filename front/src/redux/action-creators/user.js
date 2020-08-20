@@ -40,3 +40,6 @@ export const fetchUsers = ()=> dispatch =>{
         return axios.get(`/api/users`)
           .then(res =>dispatch(viewUsers(res.data)))
       };
+
+export const authenticate = () => (dispatch) =>
+      axios.get(`/api/check`).then((res) => dispatch(logged(res.data)))

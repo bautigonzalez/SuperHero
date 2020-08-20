@@ -22,4 +22,10 @@ router.get("/logout", function (req, res, next) {
   res.sendStatus(200)
 });
 
+router.get("/check", (req, res, next) => {
+  console.log(req.user)
+  res.json(req.user);
+});
+
+
 module.exports = router

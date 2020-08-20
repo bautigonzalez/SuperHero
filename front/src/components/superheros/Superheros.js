@@ -12,7 +12,7 @@ export default () => {
           <div className="row">
                 {superheros.length ? (superheros.map((superhero)=>(
                     <Card superhero={superhero} key={superhero.id}/>
-                ))) : (search=="" ? ("Search your Superheros!"):("No match results"))}
+                ))) : (search=="" ? (<p className="noContent">Search your Superheros!</p>):(<p className="noContent">No match results</p>))}
           </div>
       </div>
     );{superhero.name}

@@ -19,10 +19,6 @@ app.use(express.static(__dirname + "/public"))
 
 app.use(volleyball)
 
-app.use(passport.initialize());
-app.use(passport.session());
-app.use(cookieParser());
-
 app.use(
   session({
     secret: "keyboard cat",
@@ -30,6 +26,10 @@ app.use(
     saveUninitialized: true,
   })
 );
+
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(cookieParser());
 
 passport.use(
   new LocalStrategy(function (username, password, done) {
