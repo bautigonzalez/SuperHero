@@ -7,6 +7,8 @@ import Register from "../register/Register";
 import Login from "../login/Login";
 import { useDispatch, useSelector } from "react-redux";
 import {authenticate} from "../../redux/action-creators/user"
+import Profile from "../profile/Profile";
+import Home from "../home/Home";
 import "./Main.scss"
 
 export default () => {
@@ -20,10 +22,12 @@ export default () => {
       <div id="main">
           <NavbarContainer/>
           <Switch>
-            <Route path="/Home" component={Superheros}/>
+            <Route path="/home" component={Home}/>
+            <Route path="/search" component={Superheros}/>
             <Route path="/character/:id" component={Character}/>
             <Route path="/register" component={Register}/>
             <Route path="/login" component={Login}/>
+            <Route path="/users/:id" component={Profile}/>
             <Redirect from="/" to="/home"/>
           </Switch>
       </div>

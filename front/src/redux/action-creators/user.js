@@ -1,5 +1,5 @@
 import axios from "axios"
-import { LOGGED, LOGOUT, VIEW_USERS } from '../constants';
+import { LOGGED, LOGOUT, VIEW_USERS, SEARCH_USER } from '../constants';
 
 const logged = function(user){
     return {
@@ -18,6 +18,13 @@ const viewUsers = function(users){
     return {
         type: VIEW_USERS,
         users
+    }
+}
+
+const searchUser = function(user){
+    return {
+        type: SEARCH_USER,
+        user
     }
 }
 
@@ -43,3 +50,6 @@ export const fetchUsers = ()=> dispatch =>{
 
 export const authenticate = () => (dispatch) =>
       axios.get(`/api/check`).then((res) => dispatch(logged(res.data)))
+
+export const findUser = id => dispatch =>
+      axios.get(`/api/users/${id}`).then(res => dispatch(searchUser(res.data)))

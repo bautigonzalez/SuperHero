@@ -17,6 +17,11 @@ router.get("/users", (req, res, next)=>{
    .then(users=>res.json(users))
 })
 
+router.get("/users/:id", (req, res, next)=>{
+  User.findById(req.params.id)
+   .then(user=>res.json(user))
+})
+
 router.get("/logout", function (req, res, next) {
   req.logout();
   res.sendStatus(200)

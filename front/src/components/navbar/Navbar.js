@@ -146,8 +146,9 @@ export default function Navbar({handleChange, handleSubmit, searchValue}) {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My favorites</MenuItem>
+      <MenuItem onClick={handleMenuClose}>
+        <Link className="myProfile" to={`/users/${user._id}`}>Profile</Link>
+      </MenuItem>
       <MenuItem onClick={()=>{
         handleMenuClose()
         dispatch(sendLogout())
@@ -166,16 +167,29 @@ export default function Navbar({handleChange, handleSubmit, searchValue}) {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
-          aria-label="account of current user"
-          aria-controls="primary-search-account-menu"
-          aria-haspopup="true"
-          color="inherit"
-        >
-          <AccountCircle />
-        </IconButton>
-        <p>Profile</p>
+      <MenuItem onClick={()=>{user.name ? handleProfileMenuOpen():null}}>
+        { user.username ? 
+          <Link className="myProfile" to={`/users/${user._id}`}>
+            <IconButton
+              aria-label="account of current user"
+              aria-controls="primary-search-account-menu"
+              aria-haspopup="true"
+              color="inherit"
+            >
+              <AccountCircle />
+            </IconButton>
+            Profile</Link> 
+        : 
+        <Link className="myProfile" to={`/login`}>
+          <IconButton
+            aria-label="account of current user"
+            aria-controls="primary-search-account-menu"
+            aria-haspopup="true"
+            color="inherit"
+          >
+            <AccountCircle />
+          </IconButton>
+          Login</Link>}
       </MenuItem>
     </Menu>
   );
@@ -261,6 +275,14 @@ export default function Navbar({handleChange, handleSubmit, searchValue}) {
                             <HomeIcon />
                         </ListItemIcon>
                         <ListItemText primary={"Home"} />
+                    </ListItem>
+                    </Link>
+                    <Link to="/search" className="linkNavbar">
+                    <ListItem button >
+                        <ListItemIcon>
+                            <SearchIcon />
+                        </ListItemIcon>
+                        <ListItemText primary={"Search"} />
                     </ListItem>
                     </Link>
                 </List>

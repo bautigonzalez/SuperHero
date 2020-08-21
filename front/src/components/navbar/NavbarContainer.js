@@ -12,7 +12,7 @@ export default () => {
   const handleSubmit = () => {
     if(search){ 
       dispatch(searchSuperheros(search))
-      history.push('/home')
+      history.push('/search')
       setSearch("")
     }
   }
