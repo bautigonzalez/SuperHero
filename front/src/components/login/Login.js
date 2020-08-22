@@ -29,22 +29,22 @@ export default () => {
                 <h2>Sign in</h2>
                 {invalid ? <p style={{color:"red"}}>Invalid email or password</p>:null}
                 <form autoComplete="off" onSubmit={handleSubmit}>
-                      <div class="form-group">
+                      <div className="form-group">
                         <input 
                         value={username}
                         type="email" 
-                        class="form-control" 
+                        className="form-control" 
                         id="email" 
                         placeholder="Email"
                         onChange={handleUsername}
                         required
                         /> 
                       </div>
-                      <div class="form-group">
+                      <div className="form-group">
                         <input 
                         value={password}
                         type="password" 
-                        class="form-control" 
+                        className="form-control" 
                         id="password" 
                         placeholder="Password"
                         onChange={handlePassword}
