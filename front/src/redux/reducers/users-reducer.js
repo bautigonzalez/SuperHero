@@ -1,4 +1,4 @@
-import { LOGGED, LOGOUT, VIEW_USERS, SEARCH_USER } from '../constants';
+import { LOGGED, LOGOUT, VIEW_USERS, SEARCH_USER, SEARCH_USERS } from '../constants';
 
 const initialState = { 
   user: {},
@@ -16,6 +16,8 @@ export default function reducer (state = initialState, action) {
        return {...state, users: action.users};
    case SEARCH_USER: 
        return {...state, searchUser: action.user};
+   case SEARCH_USERS:
+      return {...state, users: action.users}
     default: 
        return state;
   }

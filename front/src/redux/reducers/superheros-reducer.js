@@ -3,7 +3,6 @@ import { SET_SUPERHEROS, SET_SUPERHERO, FAV_SUPERHERO } from '../constants';
 const initialState = { 
   superheros: [],
   favSuperheros: [],
-  favUserId: "",
   search: "",
   superhero: {}
  };
@@ -16,7 +15,7 @@ export default function reducer (state = initialState, action) {
     case SET_SUPERHERO: 
        return {...state, superhero: action.superhero};
     case FAV_SUPERHERO: 
-       return {...state, favSuperheros: [...state.favSuperheros, action.superhero]};
+       return {...state, favSuperheros: action.superheros};
     default: 
        return state;
   }

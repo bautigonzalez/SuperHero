@@ -28,15 +28,24 @@ router.get("/logout", function (req, res, next) {
 });
 
 router.get("/check", (req, res, next) => {
-  console.log(req.user)
   res.json(req.user);
 });
 
 router.post("/addfav", (req, res, next)=> {
   User.findByIdAndUpdate({_id: req.body.userId}, { $push: { favs: req.body.fav }})
+  .then(()=>User.findById(req.body.userId))
   .then(user=>{
     console.log(user, req.body)
     res.json(user)})
 })
+
+router.put("/deletefav", (req, res, next)=> {
+  User.findByIdAndUpdate({_id: req.body.userId}, { $pullAll: { favs: [req.body.fav] }})
+  .then(()=>User.findById(req.body.userId))
+  .then(user=>{
+    console.log(user, req.body)
+    res.json(user)})
+})
+
 
 module.exports = router

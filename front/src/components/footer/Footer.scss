@@ -1,0 +1,27 @@
+#footer{
+    height: 80px;
+    background-color: black;
+    border-top: 2px solid #121212;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    h5{
+        margin-top: 10px;
+        color: white;
+        font-family: 'Bangers', cursive;
+        text-shadow: 3px 3px 3px black;
+    }
+    h6{
+        color: white;
+    }
+    span{
+        color: white;
+        cursor: pointer;
+    }
+    .icons{
+        margin-top: 20px;
+        span{
+            margin-right: 10px;
+        }
+    }
+}

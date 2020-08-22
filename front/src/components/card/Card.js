@@ -5,7 +5,7 @@ import ParallaxCard from 'react-parallax-card'
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 import Radar from "../radar/Radar"
-import {addFav} from "../../redux/action-creators/user"
+import {addFav, deleteFav} from "../../redux/action-creators/user"
 import "./Card.scss"
 
 export default ({superhero}) => {
@@ -42,12 +42,19 @@ export default ({superhero}) => {
                         <Radar characterData={superhero.powerstats} handleClick={handleClick}/>
                         <Link className="linkInfo" to={`/character/${superhero.id}`}><Button variant="contained">Info</Button></Link>
                         { user._id ? 
-                        <Button 
+                        (!user.favs.includes(superhero.id) ? <Button 
                         onClick={()=>dispatch(addFav(user._id, superhero.id))} 
                         className="btnFav" 
                         variant="contained">
                         Add to favs
-                        </Button> : (null)}
+                        </Button> :
+                        <Button 
+                        onClick={()=>dispatch(deleteFav(user._id, superhero.id))} 
+                        className="btnFav" 
+                        variant="contained">
+                        Delete fav
+                        </Button>
+                        ) : (null)}
                         <div style={{width:"100%", minHeight:"30%"}} onClick={handleClick}></div>
                     </div>
                 </ReactCardFlip>

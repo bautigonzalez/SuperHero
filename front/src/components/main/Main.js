@@ -10,6 +10,8 @@ import {authenticate} from "../../redux/action-creators/user"
 import Profile from "../profile/Profile";
 import Home from "../home/Home";
 import Contact from "../contact/Contact";
+import Footer from "../footer/Footer";
+import Users from "../users/Users";
 import "./Main.scss"
 
 export default () => {
@@ -28,10 +30,12 @@ export default () => {
             <Route path="/character/:id" component={Character}/>
             <Route path="/register" component={Register}/>
             <Route path="/login" component={Login}/>
+            <Route exact path="/users" component={Users}/>
             <Route path="/users/:id" component={Profile}/>
             <Route path="/contact" component={Contact}/>
             <Redirect from="/" to="/home"/>
           </Switch>
+          <Footer/>
       </div>
     );
   };

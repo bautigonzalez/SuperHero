@@ -21,6 +21,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import HomeIcon from '@material-ui/icons/Home';
 import MailIcon from '@material-ui/icons/Mail';
 import Button from '@material-ui/core/Button';
+import GroupIcon from '@material-ui/icons/Group';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import {sendLogout} from "../../redux/action-creators/user"
@@ -297,6 +298,14 @@ export default function Navbar({handleChange, handleSubmit, searchValue}) {
                             <SearchIcon />
                         </ListItemIcon>
                         <ListItemText primary={"Search"} />
+                    </ListItem>
+                    </Link>
+                    <Link to="/users" className="linkNavbar">
+                    <ListItem button >
+                        <ListItemIcon>
+                            <GroupIcon />
+                        </ListItemIcon>
+                        <ListItemText primary={"Users"} />
                     </ListItem>
                     </Link>
                 </List>

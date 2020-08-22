@@ -16,10 +16,10 @@ const setSuperhero = (superhero)=>{
   }
 }
 
-const favSuperhero = (superhero)=>{
+const favSuperhero = (superheros)=>{
   return {
       type: FAV_SUPERHERO,
-      superhero
+      superheros
   }
 }
 
@@ -38,9 +38,16 @@ export const searchSuperhero = id => dispatch =>{
           });
       };
 
-export const findFav = id => dispatch =>{
-        axios.get(`https://www.superheroapi.com/api.php/2779530068814025/${id}`)
-          .then(res => {
-            dispatch(favSuperhero(res.data));
-          });
+export const findFav = ids => dispatch =>{
+      let array = []
+      for(let i = 0; i < ids.length; i++){
+        array.push(
+          axios.get(`https://www.superheroapi.com/api.php/2779530068814025/${ids[i]}`)
+          .then((res)=>res.data)
+          )
+      }
+      Promise.all(array)
+      .then((resp)=>{
+        dispatch(favSuperhero(resp))
+      })
       };
