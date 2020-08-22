@@ -1,0 +1,25 @@
+#contact{
+    padding-top: 30px;
+    background-color: rgba(1, 64, 85, 0.4);
+    margin-top: 30px;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+    .row div{
+        margin: 0 auto;
+    }
+    input{
+        margin-top: 15px;
+    }
+    textarea{
+        margin-top: 15px;
+    }
+    h2{
+        color: white;
+        font-family: 'Bangers', cursive;
+        text-shadow: 3px 3px 3px black;
+    }
+    button{
+        margin-top: 15px;
+    }
+}

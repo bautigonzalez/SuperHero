@@ -1,5 +1,4 @@
 import React from "react";
-import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import { useDispatch, useSelector } from "react-redux";
 import {login} from "../../redux/action-creators/user"
@@ -17,7 +16,7 @@ export default () => {
     const handleSubmit = event =>{
         event.preventDefault()
         dispatch(login(username, password))
-        .then(()=> history.push('/search'))
+        .then(()=> history.push('/home'))
         .catch((e)=>{if(e)setInvalid(true)})
     }
     const handleUsername = e => setUsername(e.target.value)
@@ -30,24 +29,28 @@ export default () => {
                 <h2>Sign in</h2>
                 {invalid ? <p style={{color:"red"}}>Invalid email or password</p>:null}
                 <form autoComplete="off" onSubmit={handleSubmit}>
-                    <TextField 
-                    value={username} 
-                    type="email" 
-                    id="email" 
-                    label="Email" 
-                    variant="filled"
-                    onChange={handleUsername}
-                    required
-                    />
-                    <TextField 
-                    value={password} 
-                    type="password" 
-                    id="password" 
-                    label="Password" 
-                    variant="filled" 
-                    onChange={handlePassword}
-                    required
-                    />
+                      <div class="form-group">
+                        <input 
+                        value={username}
+                        type="email" 
+                        class="form-control" 
+                        id="email" 
+                        placeholder="Email"
+                        onChange={handleUsername}
+                        required
+                        /> 
+                      </div>
+                      <div class="form-group">
+                        <input 
+                        value={password}
+                        type="password" 
+                        class="form-control" 
+                        id="password" 
+                        placeholder="Password"
+                        onChange={handlePassword}
+                        required
+                        /> 
+                      </div>
                     <Button variant="contained" type="submit">Login</Button>
                 </form>
                 <p>You don't have an account? <Link to="/register">Register</Link></p>

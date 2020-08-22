@@ -13,7 +13,8 @@ var userSchema = new Schema({
   },
   salt: {
     type: String,
-  }
+  },
+  favs: [{type: String},]
 });
 
 userSchema.methods.setPassword = function (pass) {

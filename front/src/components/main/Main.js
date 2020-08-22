@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import {authenticate} from "../../redux/action-creators/user"
 import Profile from "../profile/Profile";
 import Home from "../home/Home";
+import Contact from "../contact/Contact";
 import "./Main.scss"
 
 export default () => {
@@ -28,6 +29,7 @@ export default () => {
             <Route path="/register" component={Register}/>
             <Route path="/login" component={Login}/>
             <Route path="/users/:id" component={Profile}/>
+            <Route path="/contact" component={Contact}/>
             <Redirect from="/" to="/home"/>
           </Switch>
       </div>

@@ -1,13 +1,17 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import ReactCardFlip from "react-card-flip";
 import ParallaxCard from 'react-parallax-card'
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 import Radar from "../radar/Radar"
+import {addFav} from "../../redux/action-creators/user"
 import "./Card.scss"
 
 export default ({superhero}) => {
     const [isFlipped, setIsFlipped] = React.useState(false)
+    const user = useSelector(store => store.user.user)
+    const dispatch = useDispatch()
 
     const handleClick = () => {
         setIsFlipped(!isFlipped);
@@ -37,6 +41,13 @@ export default ({superhero}) => {
                         <h3  onClick={handleClick}>{superhero.name} </h3>
                         <Radar characterData={superhero.powerstats} handleClick={handleClick}/>
                         <Link className="linkInfo" to={`/character/${superhero.id}`}><Button variant="contained">Info</Button></Link>
+                        { user._id ? 
+                        <Button 
+                        onClick={()=>dispatch(addFav(user._id, superhero.id))} 
+                        className="btnFav" 
+                        variant="contained">
+                        Add to favs
+                        </Button> : (null)}
                         <div style={{width:"100%", minHeight:"30%"}} onClick={handleClick}></div>
                     </div>
                 </ReactCardFlip>

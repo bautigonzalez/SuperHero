@@ -24,6 +24,7 @@ import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import {sendLogout} from "../../redux/action-creators/user"
+import MeetingRoomIcon from '@material-ui/icons/MeetingRoom';
 import "./Navbar.scss"
 
 const useStyles = makeStyles((theme) => ({
@@ -167,7 +168,7 @@ export default function Navbar({handleChange, handleSubmit, searchValue}) {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem onClick={()=>{user.name ? handleProfileMenuOpen():null}}>
+      <MenuItem onClick={()=>{user.username ? handleProfileMenuOpen():null}}>
         { user.username ? 
           <Link className="myProfile" to={`/users/${user._id}`}>
             <IconButton
@@ -191,6 +192,19 @@ export default function Navbar({handleChange, handleSubmit, searchValue}) {
           </IconButton>
           Login</Link>}
       </MenuItem>
+      {user.username ? (
+        <MenuItem onClick={()=>{dispatch(sendLogout())}}>
+            <IconButton
+              aria-label="account of current user"
+              aria-controls="primary-search-account-menu"
+              aria-haspopup="true"
+              color="inherit"
+            >
+              <MeetingRoomIcon />
+            </IconButton>
+            Logout 
+      </MenuItem>
+      ):(null)}
     </Menu>
   );
 
@@ -250,7 +264,7 @@ export default function Navbar({handleChange, handleSubmit, searchValue}) {
               onClick={handleMobileMenuOpen}
               color="inherit"
             >
-              <MoreIcon />
+              <AccountCircle />
             </IconButton>
           </div>
         </Toolbar>
@@ -288,12 +302,14 @@ export default function Navbar({handleChange, handleSubmit, searchValue}) {
                 </List>
               <Divider />
                 <List>
-                    <ListItem button >
-                        <ListItemIcon>
-                            <MailIcon />
-                        </ListItemIcon>
-                        <ListItemText primary={"Contact us"} />
-                    </ListItem>
+                  <Link to="/contact" className="linkNavbar">
+                      <ListItem button >
+                          <ListItemIcon>
+                              <MailIcon />
+                          </ListItemIcon>
+                          <ListItemText primary={"Contact us"} />
+                      </ListItem>
+                  </Link>
                 </List>
                 </div>
               </SwipeableDrawer>
